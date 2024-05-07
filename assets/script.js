@@ -1,8 +1,8 @@
 const arrowleft = document.querySelector(".arrow_left");
 const arrowright = document.querySelector(".arrow_right");
 let banner = document.querySelector(".banner_img");
-let tagline = document.querySelector(".tagline");
-
+let tagline = document.querySelector(".banner p");
+let i = 0;
 const dots = document.querySelector(".dots");
 
 const slides = [
@@ -33,7 +33,7 @@ arrowright.onclick = move_right();
 function move_left(i) {
 	console.log("gauche");
 	arrowleft.addEventListener("click", move_left);
-	/**slides[i=i-1];
+	/**i--;
 	if (slides[i=0]){
 		banner.src = "./assets/images/slideshow/slide1.jpg"
 		tagline.p = "Impressions tous formats <span>en boutique et en ligne</span>"
@@ -59,7 +59,7 @@ function move_left(i) {
 function move_right(i) {
 console.log("droite");
 arrowright.addEventListener("click", move_right);
-	/**slides[i=i+1];
+	/**i++;
 	if (slides[i=0]){
 		banner.src = "./assets/images/slideshow/slide1.jpg"
 		tagline.p = "Impressions tous formats <span>en boutique et en ligne</span>"
